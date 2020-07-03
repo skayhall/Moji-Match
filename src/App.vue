@@ -18,17 +18,6 @@ export default {
     "game-main": GameMain
   }
 };
-
-/*
-import HelloWorld from "./components/HelloWorld.vue";
-
-export default {
-  name: "App",
-  components: {
-    HelloWorld
-  }
-};
-*/
 </script>
 
 <style>
@@ -79,41 +68,6 @@ body {
   }
 }
 
-/*
-.flip-card{
-    width:200px;
-    height:200px;
-    background-color: #6c5ce7;
-    border-radius:10px;
-    display:inline-block;
-    margin: 10px 20px 10px 20px;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 24px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1);
-    animation: pulse 5s infinite;
-    perspective: 1000;
-    min-height: 120px;
-    cursor: pointer;
-}
-
-
-.front-card,
-.back-card {
-
-    backface-visibility: hidden;
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.back-card {
-    transform: rotateY(-180deg);
-    position: absolute;
-    background-color: #FFFFFF;
-}
-
-*/
-
 .flip_card {
   width: 210px;
   height: 200px;
@@ -163,13 +117,4 @@ body {
 .card_flip_image {
   padding-top: 40px;
 }
-
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}*/
 </style>

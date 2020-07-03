@@ -22,6 +22,7 @@ export default {};
   width: 100%;
   background-color: #382f84;
   color: #ffffff;
+  letter-spacing: 1.5px;
   text-align: center;
   z-index: 999;
 }

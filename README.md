@@ -1,7 +1,7 @@
 # moji-match-app
 
 
-## learning Notes
+## Learning Notes
 
 - vue instance = HTML is the entry point, but everything happens within the created Vue instance.
 - v-for = use to create lists

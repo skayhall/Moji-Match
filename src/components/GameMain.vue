@@ -4,7 +4,7 @@
       <!--go through and render list of cards from array-->
 
       <div v-for="(card, index) in cards" :key="card.id" class="flip_card">
-        {{ index }}. {{ card.image }}
+        <div class="card_index_imagepath">{{ index }}. {{ card.image }}</div>
 
         <div class="flip_card_inside">
           <div class="flip_card_front"></div>
@@ -78,4 +78,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.card_index_imagepath {
+  display: none;
+}
+</style>

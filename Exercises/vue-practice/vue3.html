@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>v-if If Statements</title>
+		<meta charset="UTF-8">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<style>
+			.special {background:yellow; border: 1px dotted #fe0000; padding:30px; display:block; text-align:center;}
+			.important {font-weight:bold; font-size:30px;}
+			.card {height:450px; width:200px; background-color: lightgrey;}
+			.container {background-color: pink; }
+			.figure {width:100%; }
+		</style>
+	</head>
+	<body>
+	
+	<div id="app">
+		<div class="card">
+			<div class="container">
+				<img v-bind:src="profile.pic" :alt="altText" class="figure">
+			</div>
+				<span v-if="profile">
+					Profile of {{profile.fname}} {{profile.lname}}  {{profile.bio}}
+				</span>
+				<span v-else>
+					Oh, no Profile Data found.
+				</span>
+				<span v-if="profile.mname">
+					{{profile.mname}}
+				</span>
+				<span v-else="profile.mname">
+					Oh no! You don't have a middle name.
+				</span>
+		</div>
+	</div>
+	
+	<script>
+	var app = new Vue({
+		el: '#app',
+		
+		data:{
+			
+			profile:{
+				fname: "Shanakay",
+				lname: "Hall",	
+				mname: "",
+				desc: "Description of Shanakay",
+				bio: "Front End Web Developer and Designer from Toronto. I love beautiful UI's CSS & JS.",
+				pic: '../assets/shallflowerbg.jpg',
+				altText : 'Waving emoji hand!',
+			}
+			
+		}
+		
+	});
+	</script>
+	
+		<!--
+		//step 1: Read Code Above
+		//step 2: Does the profile show up? My Answer: No
+		
+		v-if="boolean_expression"
+		v-else-if="boolean_expression"
+		v-else
+		
+		
+		You can code an if, else if, else statement into your render using the v-if, v-else-if, v-else.
+		Just like in regular programming, v-else has no condition
+		
+		Notice how the "profile" object is null. Reminder that null is Falsey in the boolean context.
+		
+		ASYNCHRONOUS LEARNING EXERCISE
+		1. Use the profile object to store information about yourself {fname, lname, desc, bio, pic}
+		2. Create a figure, figcaption, and image markup which acts as a description for yourself
+			(Something like this https://www.w3schools.com/howto/howto_css_cards.asp)
+		3. Write conditionals if information is missing (i.e. 'no bio available' if bio is blank, generic image if no pic is found)
+		-->
+
+		<!--Read/Watched documentaton from: 
+			https://vuejs.org/v2/guide/conditional.html
+			https://www.vuemastery.com/courses/intro-to-vue-js/conditional-rendering
+		-->
+
+	</body>
+</html>

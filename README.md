@@ -1,4 +1,4 @@
-# moji-match-app
+# Moji Match App
 
 
 ## Learning Notes
@@ -8,6 +8,10 @@
 - v-if = if statements/conditionals
 - v-bind = special attributes provided by Vue that apply special reactive behavior to the DOM
 - v-on = handle user unput. attach event listeners that invoke methods on a vuew instance
+- Best to use the public folder when...
+    - Lots of images need their paths synamically referenced
+
+
 
 ## Commands/Project Setup 
 - Project setup

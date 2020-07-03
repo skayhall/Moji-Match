@@ -24,6 +24,6 @@ export default {};
   color: #ffffff;
   letter-spacing: 1.5px;
   text-align: center;
-  z-index: 999;
+  z-index: 99;
 }
 </style>

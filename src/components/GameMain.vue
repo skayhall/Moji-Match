@@ -107,7 +107,7 @@ export default {
     transform: scale(0.95);
   }
 
-  70% {
+  50% {
     transform: scale(1);
   }
 
@@ -141,12 +141,12 @@ export default {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Does a horizontal flip when you mouse over */
 .flip_card:hover .flip_card_inside {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+/* Positions the front and back side */
 .flip_card_front,
 .flip_card_back {
   position: absolute;
